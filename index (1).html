@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="S. Dhivyadharshini — UI/UX Designer and Frontend Developer portfolio">
+<title>S. Dhivyadharshini | Portfolio</title>
+<style>
+:root{--bg:#08090d;--card:#11131a;--text:#f5f7fb;--muted:#a8afbf;--accent:#8b5cf6;--accent2:#22d3ee;--line:#252936}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 85% 10%,#24134b 0,transparent 28%),var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(1100px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(8,9,13,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:21px;font-weight:800}.logo span{color:var(--accent2)}
+.links{display:flex;gap:26px;color:var(--muted);font-size:14px}.links a:hover{color:white}
+.hero{min-height:calc(100vh - 72px);display:grid;place-items:center;padding:80px 0}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}
+.badge{display:inline-block;padding:8px 14px;border:1px solid #393c49;border-radius:30px;color:#c8cde0;background:#11131a;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-3px}
+.gradient{background:linear-gradient(90deg,var(--accent2),#a78bfa,var(--accent));-webkit-background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:620px;margin:24px 0;font-size:18px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:12px 20px;border-radius:12px;border:1px solid var(--line);font-weight:700}
+.primary{background:linear-gradient(90deg,var(--accent),#6366f1);border:0}.secondary{background:#11131a}
+.profile{height:330px;width:330px;border-radius:50%;margin:auto;display:grid;place-items:center;background:linear-gradient(135deg,#8b5cf6,#22d3ee);padding:3px;box-shadow:0 0 80px #6d28d933}
+.profile-inner{height:100%;width:100%;border-radius:50%;background:#10121a;display:grid;place-items:center;text-align:center;padding:35px}
+.initials{font-size:70px;font-weight:900;letter-spacing:-5px}.profile-inner small{color:var(--muted)}
+section{padding:90px 0}.section-title{font-size:38px;margin-bottom:10px}.section-sub{color:var(--muted);margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#12151d,#0d0f15);border:1px solid var(--line);border-radius:18px;padding:25px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+.skills{display:flex;flex-wrap:wrap;gap:12px}.skill{padding:10px 15px;border:1px solid var(--line);border-radius:10px;background:#11131a;color:#d8dced}
+.project{display:flex;flex-direction:column;min-height:230px}.tag{display:inline-block;color:#67e8f9;font-size:12px;margin-bottom:10px}.project a{margin-top:auto;color:#c4b5fd;font-weight:700}
+.timeline{border-left:1px solid var(--line);padding-left:25px}.item{position:relative;margin-bottom:28px}.item:before{content:"";position:absolute;left:-31px;top:7px;width:10px;height:10px;background:var(--accent2);border-radius:50%;box-shadow:0 0 15px var(--accent2)}.item h3{margin-bottom:3px}.item p{color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{padding:30px;border:1px solid var(--line);border-radius:18px;background:#101219}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);text-align:center;font-size:13px}
+@media(max-width:760px){.links{display:none}.hero-grid,.contact{grid-template-columns:1fr}.profile{height:240px;width:240px}.cards{grid-template-columns:1fr}.hero{padding:55px 0}h1{letter-spacing:-2px}.profile{order:-1}}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><a class="logo" href="#home">S<span>D</span>.</a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero" id="home"><div class="container hero-grid">
+<div>
+<span class="badge">B.Tech IT • 5th Semester</span>
+<h1>Hi, I'm <span class="gradient">S. Dhivyadharshini</span></h1>
+<p>UI/UX enthusiast and frontend developer passionate about creating clean, useful and user-friendly digital experiences.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View My Work</a><a class="btn secondary" href="#contact">Let's Connect</a></div>
+</div>
+<div class="profile"><div class="profile-inner"><div><div class="initials">SD</div><small>UI/UX • Frontend</small></div></div></div>
+</div></header>
+
+<section id="about"><div class="container"><h2 class="section-title">About Me</h2><p class="section-sub">A little about my journey.</p>
+<div class="cards"><div class="card"><h3>Who I Am</h3><p>I am a B.Tech Information Technology student at DMI Engineering College, currently building my skills in UI/UX design and frontend development.</p></div>
+<div class="card"><h3>What I Do</h3><p>I enjoy turning ideas into simple interfaces and responsive web experiences using HTML, CSS and modern frontend concepts.</p></div>
+<div class="card"><h3>My Goal</h3><p>To grow as a UI/UX and frontend professional by working on meaningful projects and continuously improving my technical skills.</p></div></div>
+</div></section>
+
+<section id="skills"><div class="container"><h2 class="section-title">Skills</h2><p class="section-sub">Technologies and areas I’m currently working with.</p>
+<div class="skills"><span class="skill">UI/UX Design</span><span class="skill">Frontend Development</span><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">Java</span><span class="skill">JavaScript</span><span class="skill">Responsive Design</span><span class="skill">Figma Basics</span></div></div></section>
+
+<section id="projects"><div class="container"><h2 class="section-title">Featured Projects</h2><p class="section-sub">Projects that showcase my interest in technology and problem solving.</p>
+<div class="cards">
+<div class="card project"><span class="tag">AI • Energy Management</span><h3>Power Guardian AI</h3><p>A smart electricity consumption prediction and budget alert concept designed to help users understand usage patterns and manage energy spending.</p><a href="#contact">Discuss project →</a></div>
+<div class="card project"><span class="tag">AI • Sustainability</span><h3>AI-Driven Smart Energy Management System for Polar Research Stations</h3><p>An intelligent energy management concept focused on monitoring, predicting and optimizing electricity usage in remote polar research environments.</p><a href="#contact">Discuss project →</a></div>
+</div></div></section>
+
+<section id="experience"><div class="container"><h2 class="section-title">Experience & Learning</h2><p class="section-sub">Hands-on opportunities that helped me develop practical skills.</p>
+<div class="timeline">
+<div class="item"><h3>ServiceNow Virtual Internship Program — Cohort 6</h3><p>Virtual learning experience focused on technology and practical exposure.</p></div>
+<div class="item"><h3>Cognizant Internship</h3><p>Gained practical exposure to coding and software development through an internship experience.</p></div>
+<div class="item"><h3>Green Park Internship</h3><p>Observed professional workflows and gained valuable training and workplace exposure.</p></div>
+</div></div></section>
+
+<section id="education"><div class="container"><h2 class="section-title">Education</h2><div class="cards"><div class="card"><span class="tag">2023 — Present</span><h3>B.Tech Information Technology</h3><p>DMI Engineering College<br>Currently studying 5th Semester</p></div><div class="card"><span class="tag">2023</span><h3>Higher Secondary</h3><p>Seva Sangam Girls Higher Secondary School</p></div><div class="card"><span class="tag">2021</span><h3>Secondary Education</h3><p>Seva Sangam Girls Higher Secondary School</p></div></div></div></section>
+
+<section id="contact"><div class="container"><h2 class="section-title">Let's Connect</h2><p class="section-sub">Interested in my work or want to discuss a project?</p>
+<div class="contact"><div class="contact-card"><h3>Get in touch</h3><p style="color:#a8afbf;margin-top:10px">Add your professional email, LinkedIn and GitHub links here before publishing.</p></div><div class="contact-card"><h3>Open to opportunities</h3><p style="color:#a8afbf;margin-top:10px">Internships, projects and opportunities to learn, design and build.</p></div></div></div></section>
+<footer>© 2026 S. Dhivyadharshini • Designed & built with HTML, CSS & JavaScript</footer>
+</body></html>
